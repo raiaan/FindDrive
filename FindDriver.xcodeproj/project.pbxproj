@@ -7,16 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D2D47D128B9E58C0058A901 /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2D47CF28B9E58C0058A901 /* ServiceViewController.swift */; };
+		4D2D47D228B9E58C0058A901 /* ServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D2D47D028B9E58C0058A901 /* ServiceViewController.xib */; };
+		4D2D47D528B9F0DF0058A901 /* CarTypeCellViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2D47D328B9F0DF0058A901 /* CarTypeCellViewTableViewCell.swift */; };
+		4D2D47D628B9F0DF0058A901 /* CarTypeCellViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D2D47D428B9F0DF0058A901 /* CarTypeCellViewTableViewCell.xib */; };
+		4D2D47DB28B9FBD20058A901 /* ButtonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2D47D928B9FBD20058A901 /* ButtonsTableViewCell.swift */; };
+		4D2D47DC28B9FBD20058A901 /* ButtonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D2D47DA28B9FBD20058A901 /* ButtonsTableViewCell.xib */; };
 		4D4A135F28B6C76D0001A0FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A135E28B6C76D0001A0FF /* AppDelegate.swift */; };
 		4D4A136128B6C76D0001A0FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A136028B6C76D0001A0FF /* SceneDelegate.swift */; };
 		4D4A136328B6C76D0001A0FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A136228B6C76D0001A0FF /* ViewController.swift */; };
-		4D4A136628B6C76D0001A0FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D4A136428B6C76D0001A0FF /* Main.storyboard */; };
 		4D4A136928B6C76D0001A0FF /* FindDriver.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A136728B6C76D0001A0FF /* FindDriver.xcdatamodeld */; };
 		4D4A136B28B6C7710001A0FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D4A136A28B6C7710001A0FF /* Assets.xcassets */; };
 		4D4A136E28B6C7710001A0FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D4A136C28B6C7710001A0FF /* LaunchScreen.storyboard */; };
 		4D4A137928B6C7710001A0FF /* FindDriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A137828B6C7710001A0FF /* FindDriverTests.swift */; };
 		4D4A138328B6C7710001A0FF /* FindDriverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A138228B6C7710001A0FF /* FindDriverUITests.swift */; };
 		4D4A138528B6C7710001A0FF /* FindDriverUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A138428B6C7710001A0FF /* FindDriverUITestsLaunchTests.swift */; };
+		4D4A139328B6C7E40001A0FF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A139128B6C7E40001A0FF /* MapViewController.swift */; };
+		4D4A139428B6C7E40001A0FF /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4A139228B6C7E40001A0FF /* MapViewController.xib */; };
+		4D4A139928B6C9BD0001A0FF /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A139828B6C9BD0001A0FF /* MapInteractor.swift */; };
+		4D4A139B28B6CA0D0001A0FF /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A139A28B6CA0D0001A0FF /* MapPresenter.swift */; };
+		4D4A139D28B6CA2C0001A0FF /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A139C28B6CA2C0001A0FF /* MapRouter.swift */; };
+		4D4A13A228B6CAA10001A0FF /* DriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A13A028B6CAA10001A0FF /* DriverViewController.swift */; };
+		4D4A13A328B6CAA10001A0FF /* DriverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4A13A128B6CAA10001A0FF /* DriverViewController.xib */; };
+		4D4A13A528B6CACD0001A0FF /* DriverInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A13A428B6CACD0001A0FF /* DriverInteractor.swift */; };
+		4D4A13A728B6CAE70001A0FF /* DriverPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A13A628B6CAE70001A0FF /* DriverPresenter.swift */; };
+		4D4A13A928B6CB100001A0FF /* DriverEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A13A828B6CB100001A0FF /* DriverEntity.swift */; };
+		4D4A13AB28B6CB280001A0FF /* DriverRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A13AA28B6CB280001A0FF /* DriverRouter.swift */; };
+		4D4A13AD28B6CB500001A0FF /* MapEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A13AC28B6CB500001A0FF /* MapEntity.swift */; };
+		4D4A13B028B6D3320001A0FF /* MapView+centerToLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A13AF28B6D3320001A0FF /* MapView+centerToLocation.swift */; };
+		4DC9AD8128BA0BD900F68AB9 /* SelectionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC9AD8028BA0BD900F68AB9 /* SelectionEntity.swift */; };
+		4DC9AD8328BA408200F68AB9 /* TextField+getSelectedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC9AD8228BA408200F68AB9 /* TextField+getSelectedTextField.swift */; };
+		C5FF1DCFFA548D84057C62F2 /* Pods_FindDriver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D4FED406D5C9A3717923AD /* Pods_FindDriver.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +58,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2171D2167661768FBD5C7451 /* Pods-FindDriver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindDriver.debug.xcconfig"; path = "Target Support Files/Pods-FindDriver/Pods-FindDriver.debug.xcconfig"; sourceTree = "<group>"; };
+		49D4FED406D5C9A3717923AD /* Pods_FindDriver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindDriver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D2D47CF28B9E58C0058A901 /* ServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
+		4D2D47D028B9E58C0058A901 /* ServiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceViewController.xib; sourceTree = "<group>"; };
+		4D2D47D328B9F0DF0058A901 /* CarTypeCellViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTypeCellViewTableViewCell.swift; sourceTree = "<group>"; };
+		4D2D47D428B9F0DF0058A901 /* CarTypeCellViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTypeCellViewTableViewCell.xib; sourceTree = "<group>"; };
+		4D2D47D928B9FBD20058A901 /* ButtonsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsTableViewCell.swift; sourceTree = "<group>"; };
+		4D2D47DA28B9FBD20058A901 /* ButtonsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonsTableViewCell.xib; sourceTree = "<group>"; };
 		4D4A135B28B6C76D0001A0FF /* FindDriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindDriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D4A135E28B6C76D0001A0FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D4A136028B6C76D0001A0FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4D4A136228B6C76D0001A0FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4D4A136528B6C76D0001A0FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D4A136828B6C76D0001A0FF /* FindDriver.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FindDriver.xcdatamodel; sourceTree = "<group>"; };
 		4D4A136A28B6C7710001A0FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D4A136D28B6C7710001A0FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +79,22 @@
 		4D4A137E28B6C7710001A0FF /* FindDriverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindDriverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D4A138228B6C7710001A0FF /* FindDriverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDriverUITests.swift; sourceTree = "<group>"; };
 		4D4A138428B6C7710001A0FF /* FindDriverUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDriverUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4D4A139128B6C7E40001A0FF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4D4A139228B6C7E40001A0FF /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		4D4A139828B6C9BD0001A0FF /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		4D4A139A28B6CA0D0001A0FF /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		4D4A139C28B6CA2C0001A0FF /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		4D4A13A028B6CAA10001A0FF /* DriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverViewController.swift; sourceTree = "<group>"; };
+		4D4A13A128B6CAA10001A0FF /* DriverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriverViewController.xib; sourceTree = "<group>"; };
+		4D4A13A428B6CACD0001A0FF /* DriverInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverInteractor.swift; sourceTree = "<group>"; };
+		4D4A13A628B6CAE70001A0FF /* DriverPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverPresenter.swift; sourceTree = "<group>"; };
+		4D4A13A828B6CB100001A0FF /* DriverEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverEntity.swift; sourceTree = "<group>"; };
+		4D4A13AA28B6CB280001A0FF /* DriverRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverRouter.swift; sourceTree = "<group>"; };
+		4D4A13AC28B6CB500001A0FF /* MapEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapEntity.swift; sourceTree = "<group>"; };
+		4D4A13AF28B6D3320001A0FF /* MapView+centerToLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapView+centerToLocation.swift"; sourceTree = "<group>"; };
+		4DC9AD8028BA0BD900F68AB9 /* SelectionEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionEntity.swift; sourceTree = "<group>"; };
+		4DC9AD8228BA408200F68AB9 /* TextField+getSelectedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+getSelectedTextField.swift"; sourceTree = "<group>"; };
+		FFFEF97E0505481BB97AA072 /* Pods-FindDriver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindDriver.release.xcconfig"; path = "Target Support Files/Pods-FindDriver/Pods-FindDriver.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5FF1DCFFA548D84057C62F2 /* Pods_FindDriver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +123,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F7521A00CFDAF755DFB2D59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2171D2167661768FBD5C7451 /* Pods-FindDriver.debug.xcconfig */,
+				FFFEF97E0505481BB97AA072 /* Pods-FindDriver.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4D2D47CD28B9D0EA0058A901 /* SelectService */ = {
+			isa = PBXGroup;
+			children = (
+				4D2D47CE28B9E5530058A901 /* View */,
+				4DC9AD8028BA0BD900F68AB9 /* SelectionEntity.swift */,
+			);
+			path = SelectService;
+			sourceTree = "<group>";
+		};
+		4D2D47CE28B9E5530058A901 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D2D47D328B9F0DF0058A901 /* CarTypeCellViewTableViewCell.swift */,
+				4D2D47D428B9F0DF0058A901 /* CarTypeCellViewTableViewCell.xib */,
+				4D2D47D928B9FBD20058A901 /* ButtonsTableViewCell.swift */,
+				4D2D47DA28B9FBD20058A901 /* ButtonsTableViewCell.xib */,
+				4D2D47D028B9E58C0058A901 /* ServiceViewController.xib */,
+				4D2D47CF28B9E58C0058A901 /* ServiceViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4D4A135228B6C76D0001A0FF = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +161,8 @@
 				4D4A137728B6C7710001A0FF /* FindDriverTests */,
 				4D4A138128B6C7710001A0FF /* FindDriverUITests */,
 				4D4A135C28B6C76D0001A0FF /* Products */,
+				0F7521A00CFDAF755DFB2D59 /* Pods */,
+				AD6F25139F50CECA4F324312 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +179,11 @@
 		4D4A135D28B6C76D0001A0FF /* FindDriver */ = {
 			isa = PBXGroup;
 			children = (
+				4D4A13AE28B6D3050001A0FF /* Extensions */,
+				4D4A139528B6C7FC0001A0FF /* Modules */,
 				4D4A135E28B6C76D0001A0FF /* AppDelegate.swift */,
 				4D4A136028B6C76D0001A0FF /* SceneDelegate.swift */,
 				4D4A136228B6C76D0001A0FF /* ViewController.swift */,
-				4D4A136428B6C76D0001A0FF /* Main.storyboard */,
 				4D4A136A28B6C7710001A0FF /* Assets.xcassets */,
 				4D4A136C28B6C7710001A0FF /* LaunchScreen.storyboard */,
 				4D4A136F28B6C7710001A0FF /* Info.plist */,
@@ -130,6 +209,75 @@
 			path = FindDriverUITests;
 			sourceTree = "<group>";
 		};
+		4D4A139528B6C7FC0001A0FF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4D2D47CD28B9D0EA0058A901 /* SelectService */,
+				4D4A139E28B6CA690001A0FF /* TextLocationData */,
+				4D4A139628B6C8070001A0FF /* SelectPlace */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4D4A139628B6C8070001A0FF /* SelectPlace */ = {
+			isa = PBXGroup;
+			children = (
+				4D4A139728B6C89C0001A0FF /* View */,
+				4D4A139828B6C9BD0001A0FF /* MapInteractor.swift */,
+				4D4A139A28B6CA0D0001A0FF /* MapPresenter.swift */,
+				4D4A139C28B6CA2C0001A0FF /* MapRouter.swift */,
+				4D4A13AC28B6CB500001A0FF /* MapEntity.swift */,
+			);
+			path = SelectPlace;
+			sourceTree = "<group>";
+		};
+		4D4A139728B6C89C0001A0FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D4A139128B6C7E40001A0FF /* MapViewController.swift */,
+				4D4A139228B6C7E40001A0FF /* MapViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D4A139E28B6CA690001A0FF /* TextLocationData */ = {
+			isa = PBXGroup;
+			children = (
+				4D4A139F28B6CA860001A0FF /* View */,
+				4D4A13A428B6CACD0001A0FF /* DriverInteractor.swift */,
+				4D4A13A628B6CAE70001A0FF /* DriverPresenter.swift */,
+				4D4A13A828B6CB100001A0FF /* DriverEntity.swift */,
+				4D4A13AA28B6CB280001A0FF /* DriverRouter.swift */,
+			);
+			path = TextLocationData;
+			sourceTree = "<group>";
+		};
+		4D4A139F28B6CA860001A0FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D4A13A028B6CAA10001A0FF /* DriverViewController.swift */,
+				4D4A13A128B6CAA10001A0FF /* DriverViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D4A13AE28B6D3050001A0FF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4D4A13AF28B6D3320001A0FF /* MapView+centerToLocation.swift */,
+				4DC9AD8228BA408200F68AB9 /* TextField+getSelectedTextField.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AD6F25139F50CECA4F324312 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49D4FED406D5C9A3717923AD /* Pods_FindDriver.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +285,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D4A138828B6C7710001A0FF /* Build configuration list for PBXNativeTarget "FindDriver" */;
 			buildPhases = (
+				058F6AC3BCCFD32F9A497AB3 /* [CP] Check Pods Manifest.lock */,
 				4D4A135728B6C76D0001A0FF /* Sources */,
 				4D4A135828B6C76D0001A0FF /* Frameworks */,
 				4D4A135928B6C76D0001A0FF /* Resources */,
+				B8004D542B63BC674BE52932 /* [CP] Embed Pods Frameworks */,
+				0EA1E4CECCFC61824D653DAB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,9 +385,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D2D47D628B9F0DF0058A901 /* CarTypeCellViewTableViewCell.xib in Resources */,
+				4D2D47D228B9E58C0058A901 /* ServiceViewController.xib in Resources */,
+				4D4A13A328B6CAA10001A0FF /* DriverViewController.xib in Resources */,
 				4D4A136E28B6C7710001A0FF /* LaunchScreen.storyboard in Resources */,
+				4D4A139428B6C7E40001A0FF /* MapViewController.xib in Resources */,
+				4D2D47DC28B9FBD20058A901 /* ButtonsTableViewCell.xib in Resources */,
 				4D4A136B28B6C7710001A0FF /* Assets.xcassets in Resources */,
-				4D4A136628B6C76D0001A0FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,15 +411,90 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		058F6AC3BCCFD32F9A497AB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindDriver-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0EA1E4CECCFC61824D653DAB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FindDriver/Pods-FindDriver-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FindDriver/Pods-FindDriver-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FindDriver/Pods-FindDriver-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8004D542B63BC674BE52932 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FindDriver/Pods-FindDriver-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FindDriver/Pods-FindDriver-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FindDriver/Pods-FindDriver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4D4A135728B6C76D0001A0FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D4A13A228B6CAA10001A0FF /* DriverViewController.swift in Sources */,
+				4D4A13A728B6CAE70001A0FF /* DriverPresenter.swift in Sources */,
+				4D4A13A928B6CB100001A0FF /* DriverEntity.swift in Sources */,
+				4D4A139B28B6CA0D0001A0FF /* MapPresenter.swift in Sources */,
+				4D4A13B028B6D3320001A0FF /* MapView+centerToLocation.swift in Sources */,
+				4D4A139D28B6CA2C0001A0FF /* MapRouter.swift in Sources */,
+				4DC9AD8128BA0BD900F68AB9 /* SelectionEntity.swift in Sources */,
+				4D2D47D128B9E58C0058A901 /* ServiceViewController.swift in Sources */,
+				4D4A13AD28B6CB500001A0FF /* MapEntity.swift in Sources */,
 				4D4A136928B6C76D0001A0FF /* FindDriver.xcdatamodeld in Sources */,
+				4D4A13A528B6CACD0001A0FF /* DriverInteractor.swift in Sources */,
 				4D4A136328B6C76D0001A0FF /* ViewController.swift in Sources */,
+				4D2D47DB28B9FBD20058A901 /* ButtonsTableViewCell.swift in Sources */,
 				4D4A135F28B6C76D0001A0FF /* AppDelegate.swift in Sources */,
+				4D4A13AB28B6CB280001A0FF /* DriverRouter.swift in Sources */,
+				4D4A139928B6C9BD0001A0FF /* MapInteractor.swift in Sources */,
+				4D4A139328B6C7E40001A0FF /* MapViewController.swift in Sources */,
+				4DC9AD8328BA408200F68AB9 /* TextField+getSelectedTextField.swift in Sources */,
 				4D4A136128B6C76D0001A0FF /* SceneDelegate.swift in Sources */,
+				4D2D47D528B9F0DF0058A901 /* CarTypeCellViewTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +531,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4D4A136428B6C76D0001A0FF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4D4A136528B6C76D0001A0FF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4D4A136C28B6C7710001A0FF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -436,6 +658,7 @@
 		};
 		4D4A138928B6C7710001A0FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2171D2167661768FBD5C7451 /* Pods-FindDriver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -446,7 +669,6 @@
 				INFOPLIST_FILE = FindDriver/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -464,6 +686,7 @@
 		};
 		4D4A138A28B6C7710001A0FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFFEF97E0505481BB97AA072 /* Pods-FindDriver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -474,7 +697,6 @@
 				INFOPLIST_FILE = FindDriver/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
