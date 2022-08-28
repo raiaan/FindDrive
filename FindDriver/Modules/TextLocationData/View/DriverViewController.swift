@@ -43,6 +43,8 @@ class DriverViewController: UIViewController ,FloatingPanelControllerDelegate{
         title = "Choose Service"
         settingtextfildsUI()
         addSelectFloatingPannel()
+    }
+    override func viewWillAppear(_ animated: Bool) {
         updateAdrress(address: address)
     }
     func settingtextfildsUI(){
@@ -60,7 +62,12 @@ class DriverViewController: UIViewController ,FloatingPanelControllerDelegate{
     }
     
     @IBAction func selectPlaceOnMap(_ sender: Any) {
-        self.dismiss(animated: true)
+        addresstypeToRecieve = .pickupLocation
+        if toLocation.isFirstResponder {
+            addresstypeToRecieve = .destinationLocation
+        }
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
     func addSelectFloatingPannel(){
         floatingPanelController.layout = DriverFloatingPanelLayout()

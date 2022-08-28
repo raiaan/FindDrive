@@ -21,6 +21,7 @@ class MapRouter: MapRouterType {
             driver.address = address
             mapView.floatingPanelController.set(contentViewController: driver)
             mapView.floatingPanelController.isRemovalInteractionEnabled = true
+            
             mapView.present(mapView.floatingPanelController, animated: true)
         }
     }
