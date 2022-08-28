@@ -18,6 +18,7 @@ enum AddressType{
 }
 class DriverViewController: UIViewController ,FloatingPanelControllerDelegate{
     
+    @IBOutlet weak var PickuptLocationLabel: UILabel!
     @IBOutlet weak var predictionsTable: UITableView!
     @IBOutlet weak var toLocation: UITextField!
     @IBOutlet weak var fromLocation: UITextField!
@@ -123,6 +124,7 @@ extension DriverViewController :GMSAutocompleteFetcherDelegate{
         self.predictions = predictions.map{ item in
             "\(item.attributedPrimaryText)"
         }
+        print("returned\(predictions.count)")
         if self.predictions.count > 0{
             predictionsTable.reloadData()
             predictionsTable.isHidden = false
@@ -140,6 +142,7 @@ extension DriverViewController : UITextFieldDelegate{
 
     func textFieldDidChangeSelection(_ textField: UITextField) {
         fetcher?.sourceTextHasChanged(textField.text!)
+        PickuptLocationLabel.text = fromLocation.text
     }
 }
 
