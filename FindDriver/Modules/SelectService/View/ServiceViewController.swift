@@ -36,7 +36,7 @@ extension ServiceViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if(indexPath.row < 2 ){
             let selectorsCell = tableView.dequeueReusableCell(withIdentifier: CarTypeCellViewTableViewCell.reuseIdentifier) as! CarTypeCellViewTableViewCell
-            selectorsCell.configCell(selection: getDemoEntities()[indexPath.row])
+            selectorsCell.configCell(selection: getDemoEntities()[indexPath.row],parentView: self.view)
             return selectorsCell
         }
         else{

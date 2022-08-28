@@ -14,6 +14,7 @@ class CarTypeCellViewTableViewCell: UITableViewCell {
         return table
     }()
     let transparentView = UIView()
+    var parentView = UIView()
     @IBOutlet weak var rightText: UILabel!
     @IBOutlet weak var icon: UIImageView!
     @IBOutlet weak var button: UIButton!
@@ -32,7 +33,8 @@ class CarTypeCellViewTableViewCell: UITableViewCell {
     @IBAction func showSelections(_ sender: Any) {
         addTransparentView(frames: button.frame)
     }
-    func configCell(selection:SelectionService){
+    
+    func configCell(selection:SelectionService,parentView:UIView){
         tableItems.isHidden = true
         tableItems.dataSource = self
         tableItems.delegate = self
@@ -43,16 +45,17 @@ class CarTypeCellViewTableViewCell: UITableViewCell {
         button.titleLabel?.text = selection.data[0]
         rightText.text = selection.rightText
         selectionsItems = selection.data
+        self.parentView = parentView
     }
-    
-    
 }
+
 extension CarTypeCellViewTableViewCell:UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         button.setTitle(selectionsItems[indexPath.row], for: .normal)
         removeTransparentView()
     }
 }
+
 extension CarTypeCellViewTableViewCell: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         selectionsItems.count
@@ -66,22 +69,24 @@ extension CarTypeCellViewTableViewCell: UITableViewDataSource{
     
     func addTransparentView(frames: CGRect) {
         let window = UIApplication.shared.keyWindow
-        transparentView.frame = window?.frame ?? self.frame;
-        transparentView.addSubview(tableItems)
-        self.contentView.addSubview(transparentView)
-        tableItems.frame = CGRect(x: frames.origin.x, y: frames.origin.y + frames.height, width: frames.width, height: 0)
-       // self.addSubview(tableItems)
-        tableItems.layer.cornerRadius = 5
+        transparentView.frame = window?.frame ?? parentView.frame
+        parentView.addSubview(transparentView)
         
+        tableItems.frame = CGRect(x: frames.origin.x, y: frames.origin.y + frames.height, width: frames.width, height: 0)
+        parentView.addSubview(tableItems)
+        tableItems.layer.cornerRadius = 5
+        tableItems.isHidden = false
         transparentView.backgroundColor = UIColor.black.withAlphaComponent(0.9)
+        tableItems.reloadData()
         let tapgesture = UITapGestureRecognizer(target: self, action: #selector(removeTransparentView))
         transparentView.addGestureRecognizer(tapgesture)
         transparentView.alpha = 0
         UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: .curveEaseInOut, animations: {
             self.transparentView.alpha = 0.5
-            self.tableItems.frame = CGRect(x: frames.origin.x, y: frames.origin.y + frames.height + 5, width: frames.width, height: CGFloat(self.selectionsItems.count * 50))
+            self.tableItems.frame = CGRect(x: self.icon.frame.minX, y: frames.origin.y + frames.height + 5, width: self.rightText.frame.minX , height: 100)
         }, completion: nil)
     }
+    
     @objc func removeTransparentView() {
         let frames = self.contentView.frame
         UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: .curveEaseInOut, animations: {

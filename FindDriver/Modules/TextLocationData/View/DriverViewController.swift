@@ -104,10 +104,8 @@ extension DriverViewController{
 extension DriverViewController :GMSAutocompleteFetcherDelegate{
     func configFetcher(){
         // Set bounds to inner-west Sydney Australia.
-            let neBoundsCorner = CLLocationCoordinate2D(latitude: 30.033333,
-                                                        longitude: 31.233334)
-            let swBoundsCorner = CLLocationCoordinate2D(latitude: -33.875725,
-                                                        longitude: 151.200349)
+           let neBoundsCorner = CLLocationCoordinate2D(latitude: 30.033333,longitude: 31.233334)
+            let swBoundsCorner = CLLocationCoordinate2D(latitude: -33.875725,longitude: 151.200349)
             // Set up the autocomplete filter.
             let filter = GMSAutocompleteFilter()
             filter.locationRestriction = GMSPlaceRectangularLocationOption(neBoundsCorner, swBoundsCorner)
@@ -142,6 +140,7 @@ extension DriverViewController : UITextFieldDelegate{
 
     func textFieldDidChangeSelection(_ textField: UITextField) {
         fetcher?.sourceTextHasChanged(textField.text!)
+        print(textField.text)
         PickuptLocationLabel.text = fromLocation.text
     }
 }
