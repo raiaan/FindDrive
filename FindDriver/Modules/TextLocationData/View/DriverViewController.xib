@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DriverViewController" customModule="FindDriver" customModuleProvider="target">
             <connections>
                 <outlet property="fromLocation" destination="MFl-sb-RfN" id="1dF-Wo-wDq"/>
+                <outlet property="predictionsTable" destination="Dg1-AC-br4" id="Ceh-r4-e3G"/>
                 <outlet property="toLocation" destination="Dsv-7q-c0z" id="Qn9-N5-OqP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -57,6 +58,13 @@
                                     </attributedString>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Dg1-AC-br4">
+                                    <rect key="frame" x="0.0" y="-8" width="366" height="150"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="150" id="gRZ-cQ-OKT"/>
+                                    </constraints>
+                                </tableView>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="sUd-AE-4WT" firstAttribute="centerX" secondItem="4X4-Cv-DGw" secondAttribute="centerX" constant="42" id="793-g5-AFU"/>
@@ -93,12 +101,15 @@
                         <constraint firstItem="IRq-Dv-I5N" firstAttribute="top" secondItem="4X4-Cv-DGw" secondAttribute="bottom" constant="8" id="2QW-c5-zlw"/>
                         <constraint firstItem="IRq-Dv-I5N" firstAttribute="leading" secondItem="Af3-hE-IKa" secondAttribute="leading" constant="24" id="6A8-gK-1dp"/>
                         <constraint firstItem="Dsv-7q-c0z" firstAttribute="leading" secondItem="Af3-hE-IKa" secondAttribute="leading" constant="24" id="6Bq-jk-SGt"/>
+                        <constraint firstItem="Dg1-AC-br4" firstAttribute="trailing" secondItem="Dsv-7q-c0z" secondAttribute="trailing" id="7vv-tN-brI"/>
                         <constraint firstItem="MFl-sb-RfN" firstAttribute="leading" secondItem="Af3-hE-IKa" secondAttribute="leading" constant="24" id="8FQ-aT-bVx"/>
                         <constraint firstItem="Af3-hE-IKa" firstAttribute="trailing" secondItem="Dsv-7q-c0z" secondAttribute="trailing" constant="24" id="92o-pm-ucW"/>
                         <constraint firstItem="4X4-Cv-DGw" firstAttribute="leading" secondItem="Af3-hE-IKa" secondAttribute="leading" constant="24" id="K66-T3-euQ"/>
                         <constraint firstItem="4X4-Cv-DGw" firstAttribute="top" secondItem="Dsv-7q-c0z" secondAttribute="bottom" constant="16" id="LFz-9g-C3T"/>
                         <constraint firstItem="Dsv-7q-c0z" firstAttribute="top" secondItem="MFl-sb-RfN" secondAttribute="bottom" constant="16" id="LSl-OL-t6J"/>
                         <constraint firstItem="Af3-hE-IKa" firstAttribute="trailing" secondItem="4X4-Cv-DGw" secondAttribute="trailing" constant="24" id="SIL-0z-eT0"/>
+                        <constraint firstItem="Dg1-AC-br4" firstAttribute="leading" secondItem="Dsv-7q-c0z" secondAttribute="leading" id="YQi-0B-h9x"/>
+                        <constraint firstItem="Dg1-AC-br4" firstAttribute="top" secondItem="Dsv-7q-c0z" secondAttribute="bottom" constant="8" id="bSh-7A-w3V"/>
                         <constraint firstItem="MFl-sb-RfN" firstAttribute="top" secondItem="Af3-hE-IKa" secondAttribute="top" constant="36" id="bwM-UQ-hOn"/>
                         <constraint firstItem="Af3-hE-IKa" firstAttribute="trailing" secondItem="IRq-Dv-I5N" secondAttribute="trailing" constant="24" id="mTw-hq-w3s"/>
                         <constraint firstItem="Af3-hE-IKa" firstAttribute="trailing" secondItem="MFl-sb-RfN" secondAttribute="trailing" constant="24" id="plO-oP-cl3"/>

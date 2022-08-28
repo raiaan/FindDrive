@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import FloatingPanel
 
 protocol MapRouterType: AnyObject {
     func routeToDriver(from: MapViewControllerType,address:String)
@@ -21,24 +20,8 @@ class MapRouter: MapRouterType {
             driver.address = address
             mapView.floatingPanelController.set(contentViewController: driver)
             mapView.floatingPanelController.isRemovalInteractionEnabled = true
-            
             mapView.present(mapView.floatingPanelController, animated: true)
         }
     }
 
 }
-
-class TextLocationFloatingPanelLayout: FloatingPanelLayout{
-    var position: FloatingPanelPosition = .bottom
-    
-    var initialState: FloatingPanelState = .full
-    
-    var anchors: [FloatingPanelState : FloatingPanelLayoutAnchoring]{
-        return [
-            .full: FloatingPanelLayoutAnchor(absoluteInset: 16.0, edge: .top, referenceGuide: .safeArea),
-            .half: FloatingPanelLayoutAnchor(fractionalInset: 0.5, edge: .bottom, referenceGuide: .safeArea),
-            .tip: FloatingPanelLayoutAnchor(absoluteInset: 44.0, edge: .bottom, referenceGuide: .safeArea),
-        ]
-    }
-}
-
